@@ -1,6 +1,4 @@
 import numpy as np
-
-
 class NumbersOperations:
 
     def generate_set(self, mu, sigma, n):
@@ -15,3 +13,9 @@ class NumbersOperations:
         for i in range(len(set)):
             counter += set[i]
         return counter / len(set)
+
+    def get_unique(self, set):
+        return np.unique(set)
+
+    def get_selective_dispersion(self, set):
+        selective_dispersion = 0
