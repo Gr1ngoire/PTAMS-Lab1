@@ -17,6 +17,7 @@ set = numbers_operations.generate_set(mu, sigma, n)
 counts = numbers_operations.get_frequencies_in_set(set)
 print(set, counts)
 
+
 # POLYGON
 diagrams.generate_polygon(set, counts)
 diagrams.show_diagram()
@@ -24,3 +25,5 @@ diagrams.show_diagram()
 # HISTOGRAM
 diagrams.generate_histogram(set)
 diagrams.show_diagram()
+
+print("Середнє арифметичне: " + str(numbers_operations.get_sample_average(set)))
