@@ -7,3 +7,9 @@ class NumbersOperations:
     def get_frequencies_in_set(self, set):
         _, counts = np.unique(set, return_counts=True)
         return counts
+
+    def get_unique(self, set):
+        return np.unique(set)
+
+    def get_selective_dispersion(self, set):
+        selective_dispersion = 0

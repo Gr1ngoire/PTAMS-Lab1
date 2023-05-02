@@ -1,4 +1,3 @@
-import numpy as np
 from numbers_operations import NumbersOperations
 from diagrams import Diagrams
 
@@ -15,8 +14,9 @@ mu = 0
 sigma = 1.7
 
 set = numbers_operations.generate_set(mu, sigma, n)
-set = np.unique([round(x, 2) for x in set])
+set = [round(x, 2) for x in set]
 counts = numbers_operations.get_frequencies_in_set(set)
+set = numbers_operations.get_unique(set)
 print(set, counts)
 
 # POLYGON
