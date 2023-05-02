@@ -20,6 +20,17 @@ class NumbersOperations:
     def get_selective_dispersion(self, set):
         n = len(set)
         selective_dispersion = 0
+
+    def get_moda(self, set):
+        index = 0
+        value = 0
+        freq_set = self.get_frequencies_in_set(set)
+        for i in range(len(freq_set)):
+            if freq_set[i] > value:
+                value = freq_set[i]
+                index = i
+        return set[index]
+
         average = self.get_selective_average(set)
         for x in set:
             selective_dispersion += (x - average)**2
