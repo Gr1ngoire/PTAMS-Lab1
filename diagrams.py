@@ -7,7 +7,7 @@ class Diagrams:
         self.plt.plot(x, y)
 
     def generate_histogram(self, x):
-        self.plt.hist(x)
+        self.plt.hist(x, bins=10, edgecolor='black')
 
     def generate_boxplot(self, x):
         self.plt.boxplot(x)
