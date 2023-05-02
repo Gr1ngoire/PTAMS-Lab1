@@ -19,6 +19,7 @@ counts = numbers_operations.get_frequencies_in_set(set)
 uniques = numbers_operations.get_unique(set)
 print(uniques, counts)
 
+
 # POLYGON
 diagrams.generate_polygon(uniques, counts)
 diagrams.show_diagram()
@@ -30,3 +31,5 @@ diagrams.show_diagram()
 # BOX PLOT
 diagrams.generate_boxplot(set)
 diagrams.show_diagram()
+
+print("Середнє арифметичне: " + str(numbers_operations.get_sample_average(set)))

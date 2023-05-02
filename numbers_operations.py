@@ -8,6 +8,12 @@ class NumbersOperations:
         _, counts = np.unique(set, return_counts=True)
         return counts
 
+    def get_sample_average(self, set):
+        counter = 0
+        for i in range(len(set)):
+            counter += set[i]
+        return counter / len(set)
+
     def get_unique(self, set):
         return np.unique(set)
 
