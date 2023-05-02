@@ -16,16 +16,20 @@ sigma = 1.7
 set = numbers_operations.generate_set(mu, sigma, n)
 set = [round(x, 2) for x in set]
 counts = numbers_operations.get_frequencies_in_set(set)
-set = numbers_operations.get_unique(set)
-print(set, counts)
+uniques = numbers_operations.get_unique(set)
+print(uniques, counts)
 
 
 # POLYGON
-diagrams.generate_polygon(set, counts)
+diagrams.generate_polygon(uniques, counts)
 diagrams.show_diagram()
 
 # HISTOGRAM
-diagrams.generate_histogram(set)
+diagrams.generate_histogram(uniques)
+diagrams.show_diagram()
+
+# BOX PLOT
+diagrams.generate_boxplot(set)
 diagrams.show_diagram()
 
 print("Середнє арифметичне: " + str(numbers_operations.get_sample_average(set)))
