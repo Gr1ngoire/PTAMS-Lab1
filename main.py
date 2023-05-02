@@ -1,5 +1,8 @@
-import numpy as np
-import matplotlib.pyplot as plt
+from numbers_operations import NumbersOperations
+from diagrams import Diagrams
+
+diagrams = Diagrams()
+numbers_operations = NumbersOperations()
 
 # 32
 variant = 120 % 11 + 11 * 2
@@ -10,14 +13,14 @@ n = 134
 mu = 0
 sigma = 1.7
 
-set = np.random.normal(mu, sigma, n)
-_, counts = np.unique(set, return_counts=True)
+set = numbers_operations.generate_set(mu, sigma, n)
+counts = numbers_operations.get_frequencies_in_set(set)
 print(set, counts)
 
 # POLYGON
-plt.plot(set, counts)
-plt.show()
+diagrams.generate_polygon(set, counts)
+diagrams.show_diagram()
 
 # HISTOGRAM
-plt.hist(set)
-plt.show()
+diagrams.generate_histogram(set)
+diagrams.show_diagram()
