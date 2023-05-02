@@ -33,7 +33,6 @@ diagrams.generate_boxplot(set)
 diagrams.show_diagram()
 
 print("Середнє арифметичне: " + str(numbers_operations.get_selective_average(set)))
-
 print(f"Вибіркова дисперсія: {numbers_operations.get_selective_dispersion(set)}")
 print(f"Вибіркове стандартне відхилення: {numbers_operations.get_selective_standard_deviation(set)}")
 print("Медіана: " + str(numbers_operations.get_median(set)))
