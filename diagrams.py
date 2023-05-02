@@ -9,5 +9,8 @@ class Diagrams:
     def generate_histogram(self, x):
         self.plt.hist(x)
 
+    def generate_boxplot(self, x):
+        self.plt.boxplot(x)
+
     def show_diagram(self):
         self.plt.show()
