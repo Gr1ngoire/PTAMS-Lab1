@@ -9,8 +9,7 @@ class Diagrams:
         self.plt.plot(x, y)
 
     def generate_histogram(self, x):
-        n = len(np.unique(x))
-        self.plt.hist(x, bins=n, edgecolor='black')
+        self.plt.hist(x, 5, edgecolor='black')
 
     def generate_boxplot(self, x):
         self.plt.boxplot(x)

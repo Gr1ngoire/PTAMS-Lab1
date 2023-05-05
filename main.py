@@ -30,7 +30,7 @@ print(f'{C_YELLOW}Середнє арифметичне:{C_END} {str(numbers_ope
 print(f"{C_YELLOW}Вибіркова дисперсія:{C_END} {numbers_operations.get_selective_dispersion(set)}")
 print(f"{C_YELLOW}Вибіркове стандартне відхилення:{C_END} {numbers_operations.get_selective_standard_deviation(set)}")
 print(f"{C_YELLOW}Медіана:{C_END} {str(numbers_operations.get_median(set))}" )
-print(f"{C_YELLOW}Мода:{C_END} {str(numbers_operations.get_moda(set)[0])}")
+print(f"{C_YELLOW}Мода:{C_END} {str(numbers_operations.get_moda(set))}")
 
 # POLYGON
 diagrams.generate_polygon(uniques, counts)
